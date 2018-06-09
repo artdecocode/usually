@@ -14,11 +14,19 @@
     "example/": "yarn e example/example.js",
     "build": "babel src --out-dir build --source-maps"
   },
+  "files": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/artdecocode/usually.git"
   },
   "keywords": [
+    "cli",
+    "usage",
+    "help",
+    "bin",
+    "binary",
     "usually"
   ],
   "author": "Anton <anton@adc.sh>",
