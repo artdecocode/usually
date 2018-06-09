@@ -20,7 +20,7 @@ const T = {
       line: 'usually [-c command|command2] [-h]',
       example: 'usually -c command2',
     })
-    await test('usage.txt', res)
+    await test('usage.txt', res.trim())
   },
   async 'generates usage information without example'({ usage, SNAPSHOT_DIR }, { test, setDir }) {
     setDir(SNAPSHOT_DIR)
@@ -29,7 +29,7 @@ const T = {
       description: 'A test command-line application',
       line: 'usually [-c command|command2] [-h]',
     })
-    await test('no-example.txt', res)
+    await test('no-example.txt', res.trim())
   },
 }
 
