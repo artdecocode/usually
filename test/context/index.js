@@ -1,17 +1,18 @@
+import { resolve } from 'path'
 /**
- * A testing context for the package.
+ * A testing context for the usually package.
  */
 export default class Context {
-  async _init() {
-    console.log('init context')
-  }
   /**
-   * Example method.
+   * A test usage object.
    */
-  example() {
-    return 'OK'
+  get SNAPSHOT_DIR() {
+    return resolve(__dirname, '../snapshot')
   }
-  async _destroy() {
-    console.log('destroy context')
+  get usage() {
+    return {
+      '-h': 'print help',
+      '-c': 'execute this command',
+    }
   }
 }

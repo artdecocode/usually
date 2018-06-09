@@ -1,0 +1,6 @@
+A test command-line application
+
+  usually [-c command|command2] [-h]
+
+	-h	print help
+	-c	execute this command
