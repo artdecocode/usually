@@ -1,14 +1,14 @@
 # usually
 
-[![npm version](https://badge.fury.io/js/mnp.svg)](https://badge.fury.io/js/mnp)
+[![npm version](https://badge.fury.io/js/usually.svg)](https://badge.fury.io/js/usually)
 
-`usually` is will generate usage of a Node.js command-line application.
+`usually` will generate usage of a Node.js command-line application.
 
 ```sh
 yarn add -E usually
 ```
 
-## `usually(config: Object):string`
+## `usually(config: Object): string`
 
 Create a string to display as a help message.
 
