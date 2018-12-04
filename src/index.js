@@ -79,10 +79,11 @@ export default function usually(config = {}) {
   }, [])
 
   const USA = usa.map(a => `\t${a}`)
-  const u = `${description}
-
-  ${line}
-
+  const s = [
+    description,
+    `  ${line || ''}`,
+  ].filter(l => l ? l.trim() : l).join('\n\n')
+  const u = `${s ? `${s}\n` : ''}
 ${USA.join('\n')}
 `
 
