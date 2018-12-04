@@ -1,15 +1,14 @@
-
-
-## `usually(config: Object): string`
+```## usually => string
+[
+  ["config", "Config"]
+]
+```
 
 Create a string to display as a help message.
 
-| Property    | Type   | Description                                          |
-|-------------|--------|------------------------------------------------------|
-| **usage**   | Object | A map with possible arguments and their information. |
-| description | string | What does the program do.                            |
-| line        | string | A summary of the program in one line.                |
-| example     | string | Example of a program usage.                          |
+%TYPEDEF types/index.xml Config%
 
 %EXAMPLE: example/example.js, ../src => usually%
-%FORK-fs example example/usually%
+%FORK-fs example example/example%
+
+%~ 11%

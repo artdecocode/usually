@@ -18,7 +18,8 @@ npm i usually
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`usually(config: Object): string`](#usuallyconfig-object-string)
+- [`usually(config: Config): string`](#usuallyconfig-config-string)
+  * [`Config`](#type-config)
 - [Licence](#licence)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
@@ -37,18 +38,18 @@ const usually = require('usually')
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
-
-
-## `usually(config: Object): string`
+## `usually(`<br/>&nbsp;&nbsp;`config: Config,`<br/>`): string`
 
 Create a string to display as a help message.
 
-| Property    | Type   | Description                                          |
-|-------------|--------|------------------------------------------------------|
-| **usage**   | Object | A map with possible arguments and their information. |
-| description | string | What does the program do.                            |
-| line        | string | A summary of the program in one line.                |
-| example     | string | Example of a program usage.                          |
+__<a name="type-config">`Config`</a>__
+
+|    Name     |              Type              |                     Description                      |
+| ----------- | ------------------------------ | ---------------------------------------------------- |
+| __usage*__  | _Object&lt;string, string&gt;_ | A map with possible arguments and their information. |
+| description | _string_                       | What does the program do.                            |
+| line        | _string_                       | A summary of the program in one line.                |
+| example     | _string_                       | Example of a program usage.                          |
 
 ```js
 import usually from 'usually'
@@ -66,8 +67,19 @@ const res = usually({
 console.log(res)
 ```
 ```fs
+A test command-line application
 
+  usually [-c command|command2] [-h]
+
+	-h	print help
+	-c	execute this command
+
+  Example:
+
+    usually -c command2
 ```
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
 
 ## Licence
 
