@@ -4,15 +4,15 @@
   "description": "Print usage of a Node.js command-line application.",
   "main": "build",
   "scripts": {
-    "t": "zoroaster -b",
+    "t": "zoroaster -a",
     "test": "yarn t test/spec",
-    "test-build": "BABEL_ENV=test-build yarn t test/spec",
+    "test-build": "ALAMODE_ENV=test-build yarn test",
     "test-all": "yarn-s test test-build",
     "test-watch": "yarn test --watch",
     "lint": "eslint .",
     "e": "node example",
     "example/": "yarn e example/example.js",
-    "build": "babel src --out-dir build --source-maps"
+    "build": "alamode src -o build -s"
   },
   "files": [
     "build"
@@ -36,16 +36,12 @@
   },
   "homepage": "https://github.com/artdecocode/usually#readme",
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.49",
-    "@babel/core": "7.0.0-beta.49",
-    "@babel/plugin-syntax-object-rest-spread": "7.0.0-beta.49",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.49",
-    "@babel/register": "7.0.0-beta.49",
-    "babel-plugin-transform-rename-import": "2.2.0",
+    "alamode": "1.6.0",
+    "documentary": "1.20.1",
     "eslint": "4.19.1",
     "eslint-config-artdeco": "1.0.0",
     "snapshot-context": "2.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "2.1.0"
+    "zoroaster": "3.6.6"
   }
 }
