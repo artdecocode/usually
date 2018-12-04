@@ -44,12 +44,12 @@ Create a string to display as a help message.
 
 __<a name="type-config">`Config`</a>__
 
-|    Name     |              Type              |                     Description                      |
-| ----------- | ------------------------------ | ---------------------------------------------------- |
-| __usage*__  | _Object&lt;string, string&gt;_ | A map with possible arguments and their information. |
-| description | _string_                       | What does the program do.                            |
-| line        | _string_                       | A summary of the program in one line.                |
-| example     | _string_                       | Example of a program usage.                          |
+|    Name     |              Type              |                               Description                               |
+| ----------- | ------------------------------ | ----------------------------------------------------------------------- |
+| __usage*__  | _Object&lt;string, string&gt;_ | The map with possible arguments (flags, options) and their information. |
+| description | _string_                       | What does the program do?                                               |
+| line        | _string_                       | The summary of the program in one line.                                 |
+| example     | _string_                       | The Example of the program usage.                                       |
 
 ```js
 import usually from 'usually'

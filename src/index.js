@@ -1,10 +1,10 @@
 /**
  * Generate a usage string.
  * @param {Config} config
- * @param {Object<string, string>} config.usage A map with possible arguments and their information.
- * @param {string} [config.description] What does the program do.
- * @param {string} [config.line] A summary of the program in one line.
- * @param {string} [config.example] Example of a program usage.
+ * @param {Object<string, string>} config.usage The map with possible arguments (flags, options) and their information.
+ * @param {string} [config.description] What does the program do?
+ * @param {string} [config.line] The summary of the program in one line.
+ * @param {string} [config.example] The Example of the program usage.
  * @example
  * // Get the usage string and print it.
  * import usually from '../src'
@@ -102,8 +102,8 @@ ${USA.join('\n')}
 /* documentary types/index.xml */
 /**
  * @typedef {Object} Config
- * @prop {Object<string, string>} usage A map with possible arguments and their information.
- * @prop {string} [description] What does the program do.
- * @prop {string} [line] A summary of the program in one line.
- * @prop {string} [example] Example of a program usage.
+ * @prop {Object<string, string>} usage The map with possible arguments (flags, options) and their information.
+ * @prop {string} [description] What does the program do?
+ * @prop {string} [line] The summary of the program in one line.
+ * @prop {string} [example] The Example of the program usage.
  */
