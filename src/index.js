@@ -20,6 +20,18 @@
  * })
  *
  * console.log(res)
+ *
+ * // A test command-line application
+ * //
+ * //  usually [-c command|command2] [-h]
+ * //
+ * //        -h      print help
+ * //        -c      execute this command
+ * //
+ * //  Example:
+ * //
+ * //    usually -c command2
+ * //
  */
 export default function usually(config = {}) {
   const {
