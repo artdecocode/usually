@@ -12,7 +12,11 @@
     "lint": "eslint .",
     "e": "node example",
     "example/": "yarn e example/example.js",
-    "build": "alamode src -o build -s"
+    "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "d": "yarn-s d1",
+    "d1": "documentary src/index -g",
+    "build": "yarn-s d b doc",
+    "b": "alamode src -o build -s"
   },
   "files": [
     "build"
