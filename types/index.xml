@@ -1,0 +1,16 @@
+<types>
+  <type name="Config">
+    <prop name="usage" type="Object<string, string>">
+      A map with possible arguments and their information.
+    </prop>
+    <prop opt string name="description">
+      What does the program do.
+    </prop>
+    <prop opt string name="line">
+      A summary of the program in one line.
+    </prop>
+    <prop opt string name="example">
+      Example of a program usage.
+    </prop>
+  </type>
+</types>
