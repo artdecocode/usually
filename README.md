@@ -79,6 +79,34 @@ A test command-line application
     usually -c command2
 ```
 
+---
+
+The algorithm will tab the usage object and all new lines will appear indented to the required padding.
+
+```js
+import usually from 'usually'
+
+const res = usually({
+  usage: {
+    '-h': 'print help',
+    '-c': `execute this command, that will perform
+the operations on the CPU and return result
+upon the full execution or terminate after
+30s of inactivity.`,
+  },
+  description: 'Run the usually',
+})
+```
+```fs
+Run the usually
+
+	-h	print help
+	-c	execute this command, that will perform
+	  	the operations on the CPU and return result
+	  	upon the full execution or terminate after
+	  	30s of inactivity.
+```
+
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
 
 ## Licence
