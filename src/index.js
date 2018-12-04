@@ -1,14 +1,25 @@
 /**
- * @typedef {Object} Config
- * @property {Object.<string, string>} usage An map with arguments and their explanations.
- * @property {string} description Description
- * @property {string} line A line to display as summary
- * @property {string} example An example
- */
-
-/**
  * Generate a usage string.
  * @param {Config} config
+ * @param {Object<string, string>} config.usage A map with possible arguments and their information.
+ * @param {string} [config.description] What does the program do.
+ * @param {string} [config.line] A summary of the program in one line.
+ * @param {string} [config.example] Example of a program usage.
+ * @example
+ * // Get the usage string and print it.
+ * import usually from '../src'
+ *
+ * const res = usually({
+ *   usage: {
+ *     '-h': 'print help',
+ *     '-c': 'execute this command',
+ *   },
+ *   description: 'A test command-line application',
+ *   line: 'usually [-c command|command2] [-h]',
+ *   example: 'usually -c command2',
+ * })
+ *
+ * console.log(res)
  */
 export default function usually(config = {}) {
   const {
@@ -74,3 +85,12 @@ ${USA.join('\n')}
 
   return u
 }
+
+/* documentary types/index.xml */
+/**
+ * @typedef {Object} Config
+ * @prop {Object<string, string>} usage A map with possible arguments and their information.
+ * @prop {string} [description] What does the program do.
+ * @prop {string} [line] A summary of the program in one line.
+ * @prop {string} [example] Example of a program usage.
+ */
