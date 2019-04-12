@@ -10,7 +10,7 @@
     "test-all": "yarn-s test test-build",
     "test-watch": "yarn test --watch",
     "lint": "eslint .",
-    "e": "node example",
+    "e": "alanode",
     "example/": "yarn e example/example.js",
     "doc": "NODE_DEBUG=doc doc documentary -o README.md",
     "d": "yarn-s d1",
@@ -40,12 +40,12 @@
   },
   "homepage": "https://github.com/artdecocode/usually#readme",
   "devDependencies": {
-    "alamode": "1.6.0",
-    "documentary": "1.20.1",
-    "eslint": "4.19.1",
-    "eslint-config-artdeco": "1.0.0",
-    "snapshot-context": "2.0.1",
+    "alamode": "^1.9.3",
+    "documentary": "^1.23.4",
+    "eslint": "5.16.0",
+    "eslint-config-artdeco": "1.0.1",
+    "snapshot-context": "^2.2.2",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.6.6"
+    "zoroaster": "^3.11.5"
   }
 }

@@ -1,4 +1,4 @@
-// prints just the usage without any other information
+## prints just the usage without any other information
 {
   "usage": {
     "-h": "print help",

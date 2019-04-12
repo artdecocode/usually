@@ -1,12 +1,10 @@
-import { makeTestSuite } from 'zoroaster'
+import makeTestSuite from '@zoroaster/mask'
 import usually from '../../src'
 
-const T = makeTestSuite('test/result/usually.md', {
+export default makeTestSuite('test/result/usually', {
   getResults(input) {
     const params = JSON.parse(input)
     const res = usually(params)
     return res
   },
 })
-
-export default T
