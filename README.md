@@ -18,7 +18,7 @@ yarn add -E usually
 - [`usually(config: Config): string`](#usuallyconfig-config-string)
   * [`_usually.Config`](#type-_usuallyconfig)
 - [Argufy Integration](#argufy-integration)
-- [Licence](#licence)
+- [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
@@ -111,12 +111,10 @@ _Argufy_ is a program that manages arguments for CLI programs by storing them in
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
-## Licence
+## Copyright
 
-(c) [Art Deco][1] 2018
+(c) [Art Deco][1] 2019
 
 [1]: https://artd.eco
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
-
-
