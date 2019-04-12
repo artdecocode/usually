@@ -1,39 +1,37 @@
 /**
  * Generate a usage string.
- * @param {Config} config
- * @param {Object<string, string>} config.usage The map with possible arguments (flags, options) and their information.
+ * @param {!_usually.Config} config The configuration object.
+ * @param {!Object<string, string>} config.usage The map with possible arguments (flags, options) and their information.
  * @param {string} [config.description] What does the program do?
  * @param {string} [config.line] The summary of the program in one line.
- * @param {string} [config.example] The Example of the program usage.
+ * @param {string} [config.example] The example of the program usage.
  * @example
- * // Get the usage string and print it.
- * import usually from '../src'
- *
- * const res = usually({
- *   usage: {
- *     '-h': 'print help',
- *     '-c': 'execute this command',
- *   },
- *   description: 'A test command-line application',
- *   line: 'usually [-c command|command2] [-h]',
- *   example: 'usually -c command2',
- * })
- *
- * console.log(res)
- *
- * // A test command-line application
- * //
- * //  usually [-c command|command2] [-h]
- * //
- * //        -h      print help
- * //        -c      execute this command
- * //
- * //  Example:
- * //
- * //    usually -c command2
- * //
+```
+import usually from 'usually'
+
+const res = usually({
+  usage: {
+    '-h': 'print help',
+    '-c': 'execute this command',
+  },
+  description: 'A test command-line application',
+  line: 'usually [-c command|command2] [-h]',
+  example: 'usually -c command2',
+})
+// A test command-line application
+//
+//  usually [-c command|command2] [-h]
+//
+//        -h      print help
+//        -c      execute this command
+//
+//  Example:
+//
+//    usually -c command2
+//
+```
  */
-export default function usually(config = {}) {
+export default function usually(config = { usage: {} }) {
   const {
     usage = {},
     description,
@@ -44,7 +42,6 @@ export default function usually(config = {}) {
   const descriptions = Object.values(usage)
 
   const [commandLength] = commands.reduce(([longestName = 0, longestDescription = 0], name) => {
-    /** @type {string} */
     const command = usage[name]
     const theLongest = command.split('\n')
       .reduce((acc, c) => {
@@ -101,9 +98,14 @@ ${USA.join('\n')}
 
 /* documentary types/index.xml */
 /**
- * @typedef {Object} Config
- * @prop {Object<string, string>} usage The map with possible arguments (flags, options) and their information.
+ * @suppress {nonStandardJsDocs}
+ * @typedef {_usually.Config} Config The configuration object.
+ */
+/**
+ * @suppress {nonStandardJsDocs}
+ * @typedef {Object} _usually.Config The configuration object.
+ * @prop {!Object<string, string>} usage The map with possible arguments (flags, options) and their information.
  * @prop {string} [description] What does the program do?
  * @prop {string} [line] The summary of the program in one line.
- * @prop {string} [example] The Example of the program usage.
+ * @prop {string} [example] The example of the program usage.
  */

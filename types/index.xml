@@ -1,6 +1,6 @@
-<types>
-  <type name="Config">
-    <prop name="usage" type="Object<string, string>">
+<types namespace="_usually">
+  <type name="Config" desc="The configuration object.">
+    <prop name="usage" type="!Object<string, string>">
       The map with possible arguments (flags, options) and their information.
     </prop>
     <prop opt string name="description">
@@ -10,7 +10,7 @@
       The summary of the program in one line.
     </prop>
     <prop opt string name="example">
-      The Example of the program usage.
+      The example of the program usage.
     </prop>
   </type>
 </types>
