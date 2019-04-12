@@ -1,3 +1,12 @@
+## 12 April 2019
+
+### [1.2.0](https://github.com/artdecocode/usually/compare/v1.1.0...v1.2.0)
+
+- [externs] Generate externs for _Google Closure Compiler_ via _Depack_ withing `_usually_ namespace.
+- [doc] Doc integration with _Argufy_.
+- [deps] Update and unlock dev dependencies.
+- [package] Export `module`.
+
 ## 4 Dec 2018
 
 ### 1.1.0
