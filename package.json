@@ -1,6 +1,6 @@
 {
   "name": "usually",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Prints Usage For Node.JS Command-Line Applications.",
   "main": "build/index.js",
   "module": "src/index.js",
